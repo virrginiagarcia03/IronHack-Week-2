@@ -1,0 +1,125 @@
+/* Estilos para dispositivos móviles */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2%;
+    background-color: #cceeff; /* tono azulón */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #007bff; /* tono azul */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos del menú */
+.lista ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.body {
+    font-family: Arial, sans-serif;
+    float:left;
+  }
+    .list-container {
+    
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+    }
+    .list-item {
+      margin: 0.1%;
+      padding: 2%;
+      margin-top: 1%;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      width: auto;
+    }
+
+.lista li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff; /* tono azul */
+    padding: 10px;
+    display: block;
+}
+
+.nav-separator {
+    display: none;
+}
+#index{
+    display:flex;
+    justify-content: space-around;
+    border: 2px solid cornflowerblue;
+    list-style: none;
+
+
+    
+}
+
+/* Estilos del contenido */
+.main-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Estilos de las secciones */
+section {
+    margin-bottom: 20px;
+}
+
+h2, h4 {
+    color: #007bff; /* tono azul */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Estilos para dispositivos de escritorio */
+
+@media only screen and (min-width: 768px) {
+    /* Estilos del menú */
+    .lista ul {
+        display: flex;
+        justify-content: center; /* Alineación horizontal */
+    }
+
+    .lista li {
+        margin-bottom: 0;
+    }
+
+    ul li a {
+        padding: 10px 15px;
+    }
+
+    .nav-separator {
+        display: inline;
+    }
+
+    /* Estilos del contenido */
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+    }
+
+    /* Estilos de las secciones */
+    section {
+        margin-bottom: 20px;
+    }
+}
